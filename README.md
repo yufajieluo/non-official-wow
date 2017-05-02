@@ -14,7 +14,7 @@ apt-get install git cmake make gcc g++ libmysqlclient-dev libssl-dev libbz2-dev 
 > 建议在Ubuntu下新建用户，隔离超级权限
 
 ```
-add user ${wow_user}
+adduser ${wow_user}
 su - ${wow_user}
 
 cd {$work_space_path}
