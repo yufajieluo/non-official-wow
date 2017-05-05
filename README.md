@@ -22,6 +22,8 @@ git clone -b 3.3.5 git://github.com/TrinityCore/TrinityCore.git
 ```
 
 ## 3. 编译源码
+> 可以跳过该阶段，直接使用server/bin/ 和 server/etc/ 目录下编译好的文件
+
 ```
 cd ${work_space_path}/TrinityCore
 mkdir build
