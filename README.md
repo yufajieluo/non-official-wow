@@ -125,6 +125,14 @@ cd /home/${wow_user}/server/bin
 ./worldserver
 ```
 
+```
+如果出现 "0000-00-00 00:00:00" 相关错误，是由于数据库的配置sql-mode引起的
+执行以下命令查看
+show variables like 'sql_mode';
+执行以下命令，把其中的 NO_ZERO_IN_DATE,NO_ZERO_DATE 去掉
+set global sql_mode = '' // 去掉NO_ZERO_IN_DATE,NO_ZERO_DATE
+```
+
 ### 6.3 创建账号
 > 在World服务的命令行中执行以下命令：
 
